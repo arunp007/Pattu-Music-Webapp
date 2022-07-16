@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swades 2004 Movie Mp3 Songs</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="{% static 'javascript/search.js' %}"></script>
     <style>
         .btn-dark:hover{
             background-color: darkred;
@@ -97,8 +98,9 @@
     </nav>
     <div class="col-xs-12 col-lg-12" style="margin-top: 30px;">
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control col-lg-6" type="search" placeholder="Search" aria-label="Search">&nbsp;
-            <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control col-lg-6" id="text" type="search" placeholder="Search" aria-label="Search">&nbsp;
+            <button class="btn btn-dark my-2 my-sm-0" onclick="return search()" type="submit">Search</button>
+            &nbsp;&nbsp;&nbsp;<label id="search_error" style="color: red;"></label>
         </form>
     </div> 
 
@@ -153,7 +155,7 @@
     </div>
 
     <div class="footer">
-        <center><label class="label">Copyright © 2022 Pattu</label><label class="label">|</label><label class="label"><a href="https://www.instagram.com/codemaster8848/" style="text-decoration: none; color: white;">Developer Arun Pacheeri</a></label></center>       
+        <center><label class="label">Copyright © 2022 Pattu</label><label class="label">|</label><label class="label"><a href="https://www.instagram.com/codemaster8848/" style="text-decoration: none; color: white;">Developer : Arun Pacheeri</a></label></center>       
     </div>
 
 
