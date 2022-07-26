@@ -118,6 +118,9 @@ def ayal(request):
 def sanah(request):
     return render(request, 'sanah.html')
 
+def pathinettampadi(request):
+    return render(request, '18ampadi.html')
+
 def indian(request):
     return render(request, 'indian.html')
 
