@@ -206,6 +206,16 @@ function search(){
         return true
     }
 
+    if(search.value == '18ampadi' || search.value == 'pathinettam padi' || search.value == 'Pathinettam padi'){
+        window.open("https://pattu123.herokuapp.com/pattuapp/18ampadi")
+        return true
+    }
+
+    if(search.value == 'sita ramam' || search.value == 'Sita ramam' || search.value == 'SITA RAMAM'){
+        window.open("https://pattu123.herokuapp.com/pattuapp/sitaramam")
+        return true
+    }
+
     else{
         document.getElementById('search_error').innerHTML="** Please Enter A Valid Movie Name **"
         return false

@@ -145,6 +145,12 @@ def malayalam(request):
 def malayalam2(request):
     return render(request, 'malayalam2.html')
 
+def malayalam3(request):
+    return render(request, 'malayalam3.html')
+
+def sitaramam(request):
+    return render(request, 'sitaramam.html')
+
 def tamil(request):
     return render(request, 'tamil.html')
 
