@@ -55,5 +55,7 @@ urlpatterns = [
     path('tamil', views.tamil, name = 'tamil'),
     path('tamil2', views.tamil2, name = 'tamil2'),
     path('hindi', views.hindi, name = 'hindi'),
+    path('hindi2', views.hindi2, name = 'hindi2'),
+    path('guruduth', views.guruduth, name = 'guruduth'),
     path('trending', views.trending, name = 'trending'),
 ]

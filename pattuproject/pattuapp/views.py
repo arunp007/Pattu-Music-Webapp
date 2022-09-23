@@ -160,5 +160,11 @@ def tamil2(request):
 def hindi(request):
     return render(request, 'hindi.html')
 
+def hindi2(request):
+    return render(request, 'hindi2.html')
+
+def guruduth(request):
+    return render(request, 'guruduth.html')
+
 def trending(request):
     return render(request, 'trending.html')

@@ -5,22 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hindi Songs</title>
+    <title>Gurudath Hits Songs</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="{% static 'javascript/search_.js' %}"></script>
     <style>
         .btn-dark:hover{
             background-color: darkred;
         }
-
+        
         .image{
-            width: 250px;
-            height: 230px;
-            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
-        .image:hover{
-            opacity: 0.4;
+        .container{
+            background-color: lightgrey;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h4{
+            padding-top: 10px;
+            text-align: center;
+            padding-bottom: 20px;
         }
 
         .link{
@@ -40,7 +49,7 @@
             color: white;
         }
 
-        label{
+        .label{
             margin-top: 30px;
             margin-left: 20px;
         }
@@ -70,7 +79,7 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'home' %}">HOME</a>
                 </li>
@@ -95,22 +104,50 @@
             <button class="btn btn-dark my-2 my-sm-0" onclick="return search()" type="submit">Search</button>
             &nbsp;&nbsp;&nbsp;<label id="search_error" style="color: red;"></label>
         </form>
-    </div>
+    </div> 
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-3 col-lg-3">
-                <center><a href="{% url 'major' %}"><img src="{% static 'images/major.jpg' %}" class="image"></a></center>
-                <center><a href="{% url 'major' %}" style="text-decoration: none;" class="link">Major</a></center>
-            </div>
+            <div class="col-xs-7 col-lg-7">
+                <div class="container">
+                    <h4>Guruduth Hits</h4>
+                    <img src="{% static 'images/guruduth.jpg' %}" class="image">
+                    <hr color="black" style="padding-bottom: 1px;">
+                    <label style="margin-left: 20px;">Title</label><label style="margin-left: 60px;">:</label><label style="margin-left: 10px;">Guruduth Hits</label><br>
+                    <label style="margin-left: 20px;">Language</label><label style="margin-left: 20px;">:</label><label style="margin-left: 10px;">Hindi</label><br>
+                    <label style="margin-left: 20px;">Year</label><label style="margin-left: 60px;">:</label><label style="margin-left: 10px;">1953-1964</label><br>
+                    <label style="margin-left: 20px;">Director</label><label style="margin-left: 34px;">:</label><label style="margin-left: 10px;">Guruduth</label><br>
+                    <label style="margin-left: 20px;">Music</label><label style="margin-left: 50px;">:</label><label style="margin-left: 10px;"></label><br>
+                    <label style="margin-left: 20px;">Starring</label><label style="margin-left: 36px;">:</label><label style="margin-left: 10px;">Guruduth</label><br>
+                    <hr color="black" style="padding-bottom: 2px;">
+                    <h2 style="margin-left: 20px;">Tracks List</h2>
+                    <hr color="black" style="padding-bottom: 2px;">
+                    <label style="margin-left: 20px;">1. Chaudhavin Ka Chand Ho</label><br><br>
+                    <audio controls>
+                        <source src="{% static 'mp3/Chaudhavin-Ka-Chand-Ho.mp3' %}" type="audio/mp3">
+                    </audio>
+                    <hr color="black" style="padding-bottom: 2px;">
 
-            <div class="col-xs-3 col-lg-3">
-                <center><a href="{% url 'sooryavanshi' %}"><img src="{% static 'images/soorayavanshi.jpg' %}" class="image"></a></center>
-                <center><a href="{% url 'sooryavanshi' %}" style="text-decoration: none;" class="link">Soorayavanshi</a></center>
-            </div>
+                    <label style="margin-left: 20px;">2. Jane Woh Kaise Log</label><br><br>
+                    <audio controls>
+                        <source src="{% static 'mp3/Jane-Woh-Kaise-Log.mp3' %}" type="audio/mp3">
+                    </audio>
+                    <hr color="black" style="padding-bottom: 2px;">
 
-            <div class="col-xs-3 col-lg-3">
-                <center><a href="{% url 'dilbechara' %}"><img src="{% static 'images/dilbechara.jpg' %}" class="image"></a></center>
-                <center><a href="{% url 'dilbechara' %}" style="text-decoration: none;" class="link">Dil Bechara</a></center>
+                    <label style="margin-left: 20px;">3. Sar Jo Tera Chakraye</label><br><br>
+                    <audio controls>
+                        <source src="{% static 'mp3/Sar-Jo-Tera-Chakraye.mp3' %}" type="audio/mp3">
+                    </audio>
+                    <hr color="black" style="padding-bottom: 2px;">
+                    
+                    <label style="margin-left: 20px;">4. Hum Aap Ki Ankhon Mein</label><br><br>
+                    <audio controls>
+                        <source src="{% static 'mp3/Hum-Aap-Ki-Ankhon-Mein.mp3' %}" type="audio/mp3">
+                    </audio>
+
+                    <hr color="black" style="padding-bottom: 2px;">
+                    <label style="margin-left: 20px; font-size: 20px; font-weight: bolder; color: rebeccapurple;"><marquee behavior="" direction="left-right">Thank You For Visiting</marquee></label>
+                </div>
             </div>
 
             <div class="col-xs-3 col-lg-3" style="margin-top: 50px; margin-bottom: 50px;">
@@ -124,53 +161,17 @@
                 </div>
             </div>
 
-            <div class="col-xs-3 col-lg-3">
-                <center><a href="{% url 'meri' %}"><img src="{% static 'images/meri pyaari bindu.jpg' %}" class="image"></a></center>
-                <center><a href="{% url 'meri' %}" style="text-decoration: none;" class="link">Meri Pyaari Bindu</a></center>
-            </div>
-
-            <div class="col-xs-3 col-lg-3">
-                <center><a href="{% url 'dil_se' %}"><img src="{% static 'images/dil se.jpg' %}" class="image"></a></center>
-                <center><a href="{% url 'dil_se' %}" style="text-decoration: none;" class="link">Dil Se</a></center>
-            </div>
-
-            <div class="col-xs-3 col-lg-3">
-                <center><a href="{% url 'swades' %}"><img src="{% static 'images/swades2.jpg' %}" class="image"></a></center>
-                <center><a href="{% url 'swades' %}" style="text-decoration: none;" class="link">Swades</a></center>
-            </div>
-
-            <div class="col-xs-3 col-lg-3"></div>
-
-            <div class="col-xs-3 col-lg-3">
-                <center><a href="{% url 'thodisi' %}"><img src="{% static 'images/Thodisi Bewafaii.jpg' %}" class="image"></a></center>
-                <center><a href="{% url 'thodisi' %}" style="text-decoration: none;" class="link">Thodisi Bewafaii</a></center>
-            </div>
-
-            <div class="col-xs-3 col-lg-3">
-                <center><a href="{% url 'criminal' %}"><img src="{% static 'images/criminal.jpg' %}" class="image"></a></center>
-                <center><a href="{% url 'criminal' %}" style="text-decoration: none;" class="link">Criminal</a></center>
-            </div>
-
-            <div class="col-xs-3 col-lg-3">
-                <center><a href="{% url 'silsila' %}"><img src="{% static 'images/silsila.jpg' %}" class="image"></a></center>
-                <center><a href="{% url 'silsila' %}" style="text-decoration: none;" class="link">Silsila</a></center>
-            </div>
-
-
-            <div class="col-xs-3 col-lg-3"></div>
-
-            <div class="col-xs-12 col-lg-12" style="margin-top: 50px;">
-                <center><a href="{% url 'hindi' %}" class="btn btn-dark">1</a> <a href="{% url 'hindi2' %}" class="btn btn-dark">2</a> <a href="" class="btn btn-dark">3</a></center>
-            </div>
-
+            <div class="col-xs-2 col-lg-2"></div>
         </div>
     </div>
 
     <div class="footer">
-        <center><label for="">Copyright © 2022 Pattu</label><label for="">|</label><label for=""><a href="https://www.instagram.com/codemaster8848/" style="text-decoration: none; color: white;">Developer : Arun Pacheeri</a></label></center>       
+        <center><label class="label">Copyright © 2022 Pattu</label><label class="label">|</label><label class="label"><a href="https://www.instagram.com/codemaster8848/" style="text-decoration: none; color: white;">Developer : Arun Pacheeri</a></label></center>       
     </div>
-       
-  
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
